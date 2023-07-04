@@ -144,16 +144,13 @@ button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 215px;
+    width: auto;
     height: 72px;
     padding-left: 32px;
+    padding-right: 32px;
     box-sizing: border-box;
     border: 2px solid #4B4B4B;
     border-radius: 73px;
-    background: url(../img/icon1.svg), transparent;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 161px center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -286,6 +283,7 @@ button {
     overflow: hidden;
     width: 100%;
 }
+
 
 .problems-img1 img,
 .problems-img2 img,
@@ -672,6 +670,10 @@ canvas {
 
 .modal-farmer-right-img {
     width: 356px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .modal-farmer-right-img img {
@@ -2678,8 +2680,13 @@ body.fancybox-active {
     line-height: 146.3%;
     color: #B90000;
 }
+.modal-farmer-text ul {
+    padding-left: 20px;
+}
 
-
+.modal-farmer-text ul li  {
+    list-style: decimal;
+}
 
 
 
