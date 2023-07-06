@@ -658,7 +658,7 @@ canvas {
 
 .modal-farmer {
     width: 1116px;
-    height: 750px;
+    height: 640px;
     background: #0E0E0E;
     overflow: hidden;
 }
@@ -666,6 +666,8 @@ canvas {
 .modal-farmer-flex {
     display: flex;
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 .modal-farmer-right-img {
@@ -3779,9 +3781,19 @@ body.fancybox-active {
     }
 
     .modal-farmer-text-img img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         object-fit: cover;
+        display: block;
+        margin: auto;
+    }
+    .modal-farmer-text ul li {
+        font-size: 13px;
+    }
+    .modal-farmer-text-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .modal-farmer {
@@ -3847,7 +3859,7 @@ body.fancybox-active {
     .menuContentNav-img {
         display: block;
         width: 137.5px;
-        height: 30px;
+        height: 60px;
         margin-bottom: 42px;
     }
 
@@ -3897,7 +3909,7 @@ body.fancybox-active {
         background-position: 52% 40%;
     }
     .modal-farmer-overflow {
-        padding-bottom: 200px;
+        padding-bottom: 75px;
     }
     .industries {
         flex-wrap: wrap;

@@ -7,8 +7,8 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
         variableWidth: true,
-    //     autoplay: true,
-    // autoplaySpeed: 1000,
+        autoplay: true,
+    autoplaySpeed: 1000,
         responsive: [
             {
                 breakpoint: 1200,
