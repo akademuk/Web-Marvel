@@ -7,20 +7,20 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
         variableWidth: true,
-        autoplay: true,
-    autoplaySpeed: 1000,
+    //     autoplay: true,
+    // autoplaySpeed: 1000,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             },

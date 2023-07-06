@@ -427,7 +427,7 @@ button {
 } 
 .stories-left h2 {
     width: 262px;
-    font-weight: 300;
+    font-weight: 700;
     font-size: 49px;
     line-height: 120%;
     color: #FFFFFF;
@@ -2799,6 +2799,15 @@ body.fancybox-active {
         margin-left: auto;
         margin-right: 16px;
     }
+    .logotype {
+        width: auto;
+    }
+    .banner-img-position img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 /* //max-width: 1440px */
@@ -2876,7 +2885,7 @@ body.fancybox-active {
 
     .stories-left p {
         width: 100%;
-        font-size: 13px;
+        font-size: 16px;
         line-height: 150%;
         margin-bottom: 14px;
     }
@@ -3570,31 +3579,32 @@ body.fancybox-active {
     }
 
     .help-postion {
-        width: 70%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
         top: 50%;
         object-fit: contain;
     }
 
     .help-postion h2 {
         width: 42%;
-        margin-top: -36px;
+        margin-top: -150px;
         margin-left: -2px;
     }
     .help-animation {
-        display: block;
-        font-size: 74px;
+        display: inline;
+        font-size: 40px;
         line-height: 120%;
         font-weight: 700;
         margin-right: 2px;
     }
+
 
     .stories-slider {
         padding-left: 0;
     }
 
     .help-container {
-        background: url(../img/mobile.png);
+        background: url(../img/banners4.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -3880,6 +3890,111 @@ body.fancybox-active {
     .modal-farmer-overflow {
         padding-bottom: 200px;
     }
+    .industries {
+        flex-wrap: wrap;
+    }
+    .industries-item {
+        width: 48%;
+        margin-bottom: 60px;
+    }
+    .step .wrapper h2 {
+        font-size: 31px;
+        line-height: 120%;
+    }
+    .rip-header-right {
+        width: calc(100% - 332px);
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+    .rip-header-left {
+        width: 300px;
+        margin: 0 auto;
+        height: 500px;
+    }
+    .stories {
+        height: 700px;
+        padding-bottom: 0;
+    }
+    .stories-right2 {
+        height: 100%;
+    }
+    .plan-slider {
+        height: 100%;
+    }
+    .stories-item h3 {
+        font-size: 20px;
+    }
+    .stories-item-text {
+        font-size: 12px;
+    }
+    .plan-flex span {
+        font-size: 16px;
+    }
+    .work-slider-item-img img:nth-of-type(1) {
+        width: 100%;
+    }
+    .work-slider-item-img img:nth-of-type(2) {
+        display: none;
+    }
+    .rip-header-blur h2 {
+        font-size: 30px;
+    }
+    .rip-header-blur p {
+        font-size: 16px;
+    }
+    .rip-header-left {
+        height: 530px;
+    }
+    .footer-btn {
+        position: static;
+        transform: unset;
+    }
+    .work-slider-item-content h3 {
+        font-size: 20px;
+    }
+    .footer-top-left-logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-top-right {
+        margin-top: 100px;
+    }
+    .stories-left h2 {
+        font-weight: 700;
+    }
+    .stories-item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .stories-item-img img {
+        width: 85%;
+        max-width: 85%;
+        display: block;
+        margin: auto;
+    }
+    .stories-right2 {
+        background: transparent !important;
+    }
+    .rip-header {
+        margin-bottom: 0;
+    }
+    .about-item::after {
+        content: none;
+    }
+    .about-item {
+        opacity: 1;
+    }
+    .about-item {
+        height: 100% !important;
+        width: auto !important;
+    }
+    .about-item img {
+        filter: none;
+    }
+    .about-slider-container {
+        padding: 64px 0;
+    }
 }
 
 /* //max-width: 1200px */
@@ -3954,6 +4069,18 @@ body.fancybox-active {
     .about-logo img {
         height: 100%;
     }
+    .rip-header {
+        flex-direction: column-reverse;
+    }
+    .rip-header-right {
+        width: 100%;
+    }
+    .rip-header-blur {
+        position: static;
+    }
+    .rip-header-left {
+        width: 100%;
+    }
 
 }
 
@@ -3965,9 +4092,9 @@ body.fancybox-active {
     }
 
     .logotype {
-        width: 30px;
-        height: 30px;
-        overflow: hidden;
+        width: auto;
+        height: auto;
+        overflow: visible;
     }
 
     .stories-right {
@@ -4031,9 +4158,6 @@ body.fancybox-active {
         right: 18px;
     }
 
-    .footer-top-left-logo {
-        left: 16px;
-    }
 
     .questions {
         padding: 64px 16px;
@@ -4043,6 +4167,9 @@ body.fancybox-active {
 
     .copyright {
         padding: 16px;
+    }
+    .banner-img-position img {
+        object-position: left;
     }
 
     footer {
@@ -4189,12 +4316,57 @@ body.fancybox-active {
     .logotype a img {
         width: 137.5px;
         height: 30px;
-        object-fit: cover;
+        object-fit: contain;
         object-position: left;
     }
-
+    .industries-item-img:before {
+        width: 75px;
+        height: 75px;
+    }
+    .step {
+        padding-bottom: 0;
+    }
+    .industries-item a {
+        height: 30px;
+        opacity: 1;
+        font-size: 14px;
+        margin-top: 16px;
+        padding: 0;
+    }
+    .industries-item h3 {
+        font-size: 14px;
+    }
+    .industries-item-img {
+        width: 66px;
+        height: 66px;
+        top: -35px;
+    }
+    .industries-item {
+        height: 160px;
+        padding: 50px 16px 16px 16px;
+    }
+    .industries-item-img svg {
+        width: 50px;
+        height: 50px;
+    }
+    .help-animation {
+        font-size: 25px;
+        display: inline;
+    }
+    .step .wrapper h2 {
+        text-align: left;
+    }
+    .help {
+        height: 400px;
+    }
+    .help-container {
+        height: 100%;
+    }
     .problems {
         padding: 0 16px 64px 16px;
+    }
+    .help-postion h2 {
+        margin-top: -112px;
     }
 
     .btn-donate {
@@ -4243,6 +4415,21 @@ body.fancybox-active {
     .step-container li:nth-of-type(3) {
         margin-right: 0;
         margin-bottom: 0;
+    }
+    .rip-header-left {
+        height: auto;
+        padding-bottom: 32px;
+    }
+    .rip-header {
+        margin-bottom: 0;
+    }
+    .about-item {
+        width: 288px !important;
+        padding: 16px 8px;
+    }
+    .work-slider-item-img img:nth-of-type(1) {
+        margin-right: 0;
+        object-position: center;
     }
 }
 
