@@ -2511,7 +2511,7 @@ body.fancybox-active {
     margin: 0 auto;
 }
 .industries-item {
-    width: 24%;
+    width: 19%;
     height: 240px;
     padding: 160px 20px 40px 20px;
     box-sizing: border-box;
@@ -2541,16 +2541,25 @@ body.fancybox-active {
 .industries-item h3 {
     text-align: center;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     line-height: 120%;
     color: #FFFFFF;
     margin-top: 20px;
+    white-space: nowrap;
 }
 .industries-item:hover .industries-item-img {
     background: transparent;
     border: 5px solid #B90000;
     top: -40px;
     transition: all 0.5s;
+}
+.step .wrapper > p {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 64px;
+    text-align: center;
 }
 .industries-item:hover {
     padding-top: 100px;
@@ -2589,7 +2598,7 @@ body.fancybox-active {
     width: 75px;
     height: 75px;
 }
-.industries-item a{
+.industries-item button{
     height: 0;
     opacity: 0;
     margin: 0 auto;
@@ -2601,7 +2610,7 @@ body.fancybox-active {
     border-radius: 50px;
     padding-left: 16px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 150%;
     color: #FFFFFF;
     text-transform: lowercase;
@@ -2613,10 +2622,10 @@ body.fancybox-active {
     align-items: center;
     justify-content: center;
 }
-.industries-item a::after {
+.industries-item button::after {
     content: none;
 }
-.industries-item:hover a   {
+.industries-item:hover button   {
     height: 50px;
     padding-bottom: 0;
     margin-top: 20px;
@@ -2630,7 +2639,7 @@ body.fancybox-active {
     line-height: 120%;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 16px;
 }
 .step .wrapper {
     max-width: 1360px;
@@ -4326,7 +4335,7 @@ body.fancybox-active {
     .step {
         padding-bottom: 0;
     }
-    .industries-item a {
+    .industries-item button {
         height: 30px;
         opacity: 1;
         font-size: 14px;
@@ -4430,6 +4439,15 @@ body.fancybox-active {
     .work-slider-item-img img:nth-of-type(1) {
         margin-right: 0;
         object-position: center;
+    }
+    .industries-item h3 {
+        white-space: break-spaces;
+    }
+    .step .wrapper h2 {
+        text-align: center;
+    }
+    .step .wrapper > p {
+        font-size: 16px;
     }
 }
 
