@@ -2,7 +2,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #0E0E0E;
+    background: url(../img/Texture.png) #000000;
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 * {
@@ -51,8 +53,10 @@ button {
 }
 .banner-center {
     display: flex;
-    align-items: center;
+    width: 50%;
+    align-items: flex-start;
     flex-direction: column;
+    margin-top: -180px;
 }
 
 .banner-center h1 {
@@ -60,18 +64,18 @@ button {
     font-size: 76px;
     line-height: 100%;
     color: #FFFFFF;
-    max-width: 641px;
-    text-align: center;
+    max-width: 100%;
+    text-align: left;
 }
 
 .banner-center h1 span {
-    margin-top: 247px;
     display: block;
-    text-align: center;
-    font-weight: 400;
+    text-align: left;
+    font-weight: 700;
     font-size: 76px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: #B51C1C;
+    margin-top: 10px;
 }
 
 .banner-center-content {
@@ -79,12 +83,51 @@ button {
     font-weight: 300;
     font-size: 20px;
     line-height: 150%;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
-    width: 50%;
-    margin-left: -6px;
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 32px;
 }
-
+.banner-center a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    position: relative;
+    text-decoration: none;
+    border-radius: 90px;
+    background: linear-gradient(187deg, #B71E1E 0%, rgba(255, 0, 0, 0.38) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: max-content;
+    transition: all 0.5s;
+    width: 352px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.banner-center a span {
+    position: absolute;
+    width: 69px;
+    height: 63px;
+    min-height: 63px;
+    left: 0;
+    top: 0;
+    fill: linear-gradient(297deg, #F00 0%, rgba(38, 25, 25, 0.30) 100%);
+    -webkit-fill: linear-gradient(297deg, #F00 0%, rgba(38, 25, 25, 0.30) 100%);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .banner-center-content a {
     font-weight: 400;
     font-size: 20px;
@@ -120,12 +163,19 @@ button {
     right: 0px;
     top: 5px;
 }
+.banner {
+    background: url(../img/Texture.png) #0E0E0E;
+    background-repeat: repeat;
+    background-size: auto;
+}
 
 .banner .wrapper {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
     position: relative;
+    max-width: 100%;
+    padding-left: 200px;
+    height: 100%;
 }
 
 .banner-left-logo {
@@ -213,7 +263,7 @@ button {
 }
 
 .banner {
-    background: #0E0E0E;
+    background: #000000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,7 +271,7 @@ button {
     height: 100%;
     position: relative;
     padding-top: 171px;
-    height: 1200px;
+    height: 1000px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -257,11 +307,12 @@ button {
 
 .banner-img-position {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #0E0E0E;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    transform: translate(0%, -50%);
 }
 
 .banner-img-position picture {
@@ -271,7 +322,7 @@ button {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 10s;
+    transition: opacity 1s;
 }
 
 .problems {
@@ -400,22 +451,30 @@ button {
 
 .stories-left {
     width: 39.5%;
-    background: #0E0E0E;
     padding-top: 259px;
+    padding-left: 200px;
     padding-right: 94px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
     box-sizing: border-box;
 }
-
+.stories {
+    background: url(../img/section.png), #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
 .stories-right {
     width: calc(100% - 39.5%);
     padding-top: 229px;
-    background: url(../img/pexels-ovan.jpg);
+    /* background: url(../img/pexels-ovan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     position: relative;
 }
-.stories-right::after {
+/* .stories-right::after {
     content: "";
     position: absolute;
     left: 0;
@@ -424,7 +483,7 @@ button {
     height: 100%;
     background: #0E0E0E;
     opacity: 0.9;
-} 
+}  */
 .stories-left h2 {
     width: 262px;
     font-weight: 700;
@@ -432,7 +491,6 @@ button {
     line-height: 120%;
     color: #FFFFFF;
     margin-bottom: 32px;
-    margin-left: auto;
 }
 
 .stories-left p {
@@ -440,15 +498,12 @@ button {
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
-    width: 262px;
-    margin-left: auto;
     margin-bottom: 30px;
 }
 
 .stories-navigation {
     display: flex;
     align-items: center;
-    margin-left: auto;
     width: 262px;
     margin-right: 3px;
 }
@@ -491,25 +546,22 @@ button {
 
 .stories-item {
     padding: 24px 16px;
-    width: 356px !important;
+    width: 445px !important;
     height: 500px;
     box-sizing: border-box;
     overflow: hidden;
     transition: all 0.5s;
     cursor: pointer;
+    padding-top: 203px;
 }
 
-.stories-item:hover {
-    transition: all 0.5s;
-    background: #141924;
-}
 
 .stories-item-img {
-    height: 260px;
+    height: 242px;
     margin-bottom: 19px;
-    position: relative;
-    background: #141924;
-    width: 100%;
+    position: absolute;
+    width: 412px;
+    top: 0;
 }
 .stories-item-img img {
     width: 100%;
@@ -2698,16 +2750,212 @@ body.fancybox-active {
 .modal-farmer-text ul li  {
     list-style: decimal;
 }
+.banner-element-1 {
+    width: 109.18px;
+    height: 107.597px;
+    transform: rotate(33.254deg);
+    border-radius: 90px;
+    background: linear-gradient(180deg, #D51D1D 0%, #340707 57.81%, #000 100%);
+    position: absolute;
+    top: 16%;
+    left: 52%;
+}
+.banner-element-2 {
+    width: 183.548px;
+    height: 183.548px;
+    position: absolute;
+    top: 66%;
+    left: 52%;
+    z-index: 22;
+}
+.banner-element-3 {
+    position: absolute;
+    top: 16%;
+    left: 91%;
+    z-index: 2;
+}
+.stories-slider .slick-current {
+    position: relative;
+    height: 600px;
+    margin-top: 30px;
+}
+.stories-slider .slick-current .stories-item{
+    border-radius: 15px;
+    width: 445px !important;
+    padding-top: 203px;
+    background: linear-gradient(183deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.stories-slider .slick-current .stories-item .stories-item-img{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.stories-slider .slick-current > div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
+.whatWeDo {
+    background: url(../img/Texture.png) #000000;
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+    display: flex;
+    padding: 128px 0;
+    width: 100%;
+    padding-left: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.whatWeDoLeft h2 {
+    color: #FFF;
+    font-size: 62px;
+    font-weight: 600;
+    text-align: right;
+    letter-spacing: 0.62px;
+}
+.whatWeDoLeft h2 span {
+    color: #B90000;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: 0.62px;
+    display: block;
+}
+.whatWeDoLeft {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: auto;
+    margin-right: 24px;
+}
+.whatWeDoRightSection {
+    margin-bottom: 36px;
+    position: relative;
+    cursor: pointer;
+}
+.whatWeDoRightSectionTop {
+    width: 40%;
+}
+.whatWeDoRightSection > a{
+   position: absolute;
+   left: 100%;
+   top: 0;
+   width: 379px;
+   height: 100%;
+   transition: all .3s ease-in-out;
+}
+.whatWeDoRightSection:hover > a{
+    left: 40%;
+    transition: all .3s ease-in-out;
+}
+.whatWeDoRightSection > a img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-left: 5px solid #B90000;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transform: translateX(200%);
+}
+.whatWeDoRightSection > a:after {
+    content: "";
+    width: 379px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -5px;
+     -webkit-transform: translateX(160%);
+    -moz-transform: translateX(160%);
+    -ms-transform: translateX(160%);
+    -o-transform: translateX(160%);
+    transform: translateX(160%);
+}
+.whatWeDoRightSectionTop > a {
+    opacity: 0;
+}
+.whatWeDoRightSectionTop h3 {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 130%;
+    color: #FFFFFF;
+    padding-bottom: 14px;
+    margin-bottom: 6px;
+    border-bottom: 2px solid #FFFFFF;
+    position: relative;
+}
+.whatWeDoRightSectionTop h3::after{
+    content:'';
+    background: url(../img/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(100%) sepia(66%) saturate(6109%) hue-rotate(357deg) brightness(90%) contrast(112%);
+    position:absolute;
+    top: 27px;
+    right: 8px;
+    width: 16px;
+    height: 16px;
+    transition:0.5s;
+    opacity: 0;
+}
+.whatWeDoRight {
+    width: 50%;
+    height: 100%;
+}
+.whatWeDoRightSectionTop p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #FFFFFF;
+    padding-right: 20px;
+}
+.whatWeDoRightSection:hover h3::after {
+    opacity: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.whatWeDoRightSection:hover h3 {
+    color: #B90000;
+    padding-bottom: 10px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    border-bottom: 5px solid #B90000;
+}
+.whatWeDoRightSection:hover > a img {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.whatWeDoRightSection:hover > a:after {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+}
+.whatWeDo-position {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
 
 
 
@@ -2770,6 +3018,8 @@ body.fancybox-active {
 @media (min-width: 1920px) {
     .banner-img-position picture img {
         width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .rip-position picture {
@@ -3653,7 +3903,6 @@ body.fancybox-active {
     }
 
     .banner-center h1 span {
-        margin-top: 162px;
         font-size: 31px;
         line-height: 120%;
     }
