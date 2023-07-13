@@ -79,7 +79,7 @@ button {
 }
 
 .banner-center-content {
-    margin-top: 20px;
+    margin-top: 53px;
     font-weight: 300;
     font-size: 20px;
     line-height: 150%;
@@ -87,7 +87,7 @@ button {
     color: #FFFFFF;
     width: 80%;
     margin-left: 0;
-    margin-bottom: 32px;
+    margin-bottom: 53px;
 }
 .banner-center a {
     font-weight: 400;
@@ -562,6 +562,7 @@ button {
     position: absolute;
     width: 412px;
     top: 0;
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.17);
 }
 .stories-item-img img {
     width: 100%;
@@ -588,7 +589,7 @@ button {
 }
 
 .stories-item h3 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 25px;
     line-height: 150%;
     color: #FFFFFF;
@@ -601,7 +602,7 @@ button {
     line-height: 150%;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.68);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -819,6 +820,51 @@ canvas {
     border-radius: 50px;
 }
 
+.whatWeDoRight {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    padding-left: 80px;
+    padding-top: 45px;
+}
+
+.whatWeDoRight::-webkit-scrollbar {
+    width: 8px;
+    /* Ширина полосы скроллбара */
+}
+
+.whatWeDoRight::-webkit-scrollbar-track {
+    background-color: #393939;
+    /* Цвет трека скроллбара */
+    border-radius: 50px;
+}
+
+.whatWeDoRight::-webkit-scrollbar-thumb {
+    background-color: #B90000;
+    /* Цвет ползунка скроллбара */
+    border-radius: 50px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    /* Ширина полосы скроллбара */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #393939;
+    /* Цвет трека скроллбара */
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #B90000;
+    /* Цвет ползунка скроллбара */
+    border-radius: 50px;
+}
 .fancybox-button svg {
     width: 24px;
     height: 24px;
@@ -2684,6 +2730,7 @@ body.fancybox-active {
     letter-spacing: 1.86px;
     text-align: center;
     margin-bottom: 16px;
+    text-transform: uppercase;
 }
 .step .wrapper {
     max-width: 1360px;
@@ -2793,7 +2840,7 @@ body.fancybox-active {
     background-size: auto;
     position: relative;
     display: flex;
-    padding: 128px 0;
+    padding: 100px 0 128px 0;
     width: 100%;
     padding-left: 200px;
     overflow: hidden;
@@ -2817,16 +2864,36 @@ body.fancybox-active {
     background-size: contain;
     background-repeat: no-repeat;
     width: 50%;
+    padding-top: 45px;
     height: auto;
-    margin-right: 24px;
 }
 .whatWeDoRightSection {
-    margin-bottom: 36px;
+    margin-bottom: 65px;
     position: relative;
     cursor: pointer;
+    min-height: 235px;
 }
 .whatWeDoRightSectionTop {
     width: 40%;
+    position: relative;
+}
+.whatWeDoRightSectionTop::after {
+    content: "";
+    background: url(../img/plus.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 90.484px;
+    height: 84.297px;
+    transform: rotate(25.14deg);
+    position: absolute;
+    top: -40px;
+    left: -90px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.whatWeDoRightSection:hover .whatWeDoRightSectionTop::after {
+    opacity: 1;
+    transition: all 0.5s;
 }
 .whatWeDoRightSection > a{
    position: absolute;
@@ -2839,6 +2906,9 @@ body.fancybox-active {
 .whatWeDoRightSection:hover > a{
     left: 40%;
     transition: all .3s ease-in-out;
+    border: 2px solid #B90000;
+    overflow: hidden;
+    border-radius: 30px;
 }
 .whatWeDoRightSection > a img {
     object-fit: cover;
@@ -2846,7 +2916,7 @@ body.fancybox-active {
     width: 100%;
     height: 100%;
     position: relative;
-    border-left: 5px solid #B90000;
+    border-left: 1px solid #B90000;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -2875,14 +2945,16 @@ body.fancybox-active {
     opacity: 0;
 }
 .whatWeDoRightSectionTop h3 {
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 32px;
     font-weight: 700;
-    font-size: 43px;
-    line-height: 130%;
-    color: #FFFFFF;
+    letter-spacing: 0.96px;
     padding-bottom: 14px;
-    margin-bottom: 6px;
+    margin-bottom: 16px;
     border-bottom: 2px solid #FFFFFF;
     position: relative;
+    padding-left: 80px;
+    width: 300px;
 }
 .whatWeDoRightSectionTop h3::after{
     content:'';
@@ -2900,7 +2972,9 @@ body.fancybox-active {
 }
 .whatWeDoRight {
     width: 50%;
-    height: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .whatWeDoRightSectionTop p {
     font-weight: 300;
@@ -2908,14 +2982,6 @@ body.fancybox-active {
     line-height: 140%;
     color: #FFFFFF;
     padding-right: 20px;
-}
-.whatWeDoRightSection:hover h3::after {
-    opacity: 1;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
 }
 .whatWeDoRightSection:hover h3 {
     color: #B90000;
@@ -2925,7 +2991,7 @@ body.fancybox-active {
     -ms-transition: all .1s ease-in-out;
     -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
-    border-bottom: 5px solid #B90000;
+    border-bottom: 2px solid #B90000;
 }
 .whatWeDoRightSection:hover > a img {
     -webkit-transform: translateX(0%);
@@ -2940,6 +3006,20 @@ body.fancybox-active {
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
     transform: translateX(0%);
+}
+.whatWeDoRightSectionTop-tittle {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.whatWeDoRightSectionTop-tittle h4 {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 1.44px;
+    position: absolute;
+    top: 27%;
+    transform: translateY(-50%);
 }
 .whatWeDo-position {
     position: absolute;
@@ -2998,13 +3078,15 @@ body.fancybox-active {
     margin-bottom: 32px;
 }
 .portfolio p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    color: #FFFFFF;
-    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    margin-bottom: 64px;
     text-align: center;
-    width: 80%;
+    width: 70%;
 }
 .gallery-wrapper{
     display: flex;
