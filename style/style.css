@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 10;
@@ -23,6 +23,8 @@ header {
     height: 136px;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
+    background: #000000;
 }
 
 button {
