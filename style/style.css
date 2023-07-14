@@ -24,7 +24,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     z-index: 100;
-    background: #000000;
+    background: url(../img/Texture.png), #0E0E0E;
 }
 header > a {
     color: #FFF;
@@ -462,7 +462,7 @@ button {
     box-sizing: border-box;
 }
 .stories {
-    background: url(../img/section.png), #000000;
+    background: url(../img/Texture.png), #141924;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1025,7 +1025,7 @@ body::-webkit-scrollbar-thumb {
 
 .step {
     padding: 128px 0;
-    background:url(../img/price.png) #0E0E0E;
+    background: url(../img/Texture.png), #0E0E0E;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1125,7 +1125,7 @@ body::-webkit-scrollbar-thumb {
 .rip {
     position: relative;
     height: auto;
-    background: #000;
+    background: url(../img/Texture.png), #0E0E0E;
     overflow: hidden;
 }
 
@@ -2800,7 +2800,7 @@ body.fancybox-active {
 }
 
 .whatWeDo {
-    background: url(../img/Texture.png) #000000;
+    background: url(../img/Texture.png), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
     position: relative;
@@ -3000,7 +3000,7 @@ body.fancybox-active {
     display: flex;
 }
 .portfolio {
-    background: url(../img/Texture.png) #000000;
+    background: url(../img/Texture.png), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
     position: relative;
