@@ -26,7 +26,20 @@ header {
     z-index: 100;
     background: #000000;
 }
-
+header > a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    display: flex;
+    padding: 11px 41px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    background: linear-gradient(187deg, #B71E1E 0%, rgba(255, 0, 0, 0.38) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
 button {
     font-family: 'Montserrat', sans-serif;
 }
@@ -34,6 +47,8 @@ button {
 .navigation {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: 40px;
 }
 
 .navigation li {
@@ -165,11 +180,7 @@ button {
     right: 0px;
     top: 5px;
 }
-.banner {
-    background: url(../img/Texture.png) #0E0E0E;
-    background-repeat: repeat;
-    background-size: auto;
-}
+
 
 .banner .wrapper {
     display: flex;
@@ -265,7 +276,7 @@ button {
 }
 
 .banner {
-    background: #000000;
+    background: url(../img/Texture.png), #0E0E0E;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -283,29 +294,7 @@ button {
     z-index: 10;
 }
 
-.banner::before {
-    content: "";
-    background: #0E0E0E;
-    filter: blur(35px);
-    position: absolute;
-    width: 3000px;
-    height: 400px;
-    left: calc(50% - 3000px/2);
-    top: -250px;
-    z-index: 2;
-}
 
-.banner:after {
-    content: "";
-    background: #0E0E0E;
-    filter: blur(35px);
-    position: absolute;
-    width: 3000px;
-    height: 400px;
-    left: calc(50% - 3000px/2);
-    bottom: -164px;
-    z-index: 2;
-}
 
 .banner-img-position {
     position: absolute;
@@ -443,17 +432,28 @@ button {
 }
 
 .stories {
-    height: 956px;
+    overflow: hidden;
 }
 
 .stories .wrapper {
     display: flex;
     height: 100%;
+    padding: 128px 0;
 }
-
+.stories-left2 {
+    padding: 0 !important;
+    width: 100% !important;
+}
+.stories-left2 h2 {
+    width: 100%;
+}
+.stories2 .wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+}
 .stories-left {
     width: 39.5%;
-    padding-top: 259px;
     padding-left: 200px;
     padding-right: 94px;
    display: flex;
@@ -468,8 +468,7 @@ button {
     background-position: left;
 }
 .stories-right {
-    width: calc(100% - 39.5%);
-    padding-top: 229px;
+    width: auto;
     /* background: url(../img/pexels-ovan.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1025,7 +1024,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .step {
-    padding: 220px 0;
+    padding: 128px 0;
     background:url(../img/price.png) #0E0E0E;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1126,7 +1125,7 @@ body::-webkit-scrollbar-thumb {
 .rip {
     position: relative;
     height: auto;
-    background: #0E0E0E;
+    background: #000;
     overflow: hidden;
 }
 
@@ -1212,19 +1211,6 @@ body::-webkit-scrollbar-thumb {
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 16px;
-}
-.rip-header-left::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(35, 35, 35, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: all 0.5s;
 }
 
 .rip-header-btn {
@@ -1424,29 +1410,6 @@ body::-webkit-scrollbar-thumb {
     top: 0;
 }
 
-.rip::before {
-    content: "";
-    position: absolute;
-    width: 4037.23px;
-    height: 600px;
-    left: calc(50% - 4037.23px/2 + 0px);
-    top: -258.15px;
-    background: #0E0E0E;
-    filter: blur(149px);
-    z-index: 5;
-}
-
-.rip::after {
-    content: "";
-    position: absolute;
-    width: 4037.23px;
-    height: 600px;
-    left: calc(50% - 4037.23px/2 + 0px);
-    bottom: -300px;
-    background: #0E0E0E;
-    filter: blur(149px);
-    z-index: 6;
-}
 .plan-flex {
     display: flex;
     align-items: center;
@@ -3141,12 +3104,29 @@ body.fancybox-active {
     object-fit: cover;
     cursor: pointer;
 }
-
-
-
-
-
-
+.stories-right2 {
+    padding-top: 50px !important;
+}
+.plan-slider {
+    position: relative;
+}
+.plan-slider .slick-current .stories-item {
+    border-radius: 15px;
+    width: 445px !important;
+    padding-top: 230px;
+    background: linear-gradient(183deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.plan-slider .slick-current .stories-item .stories-item-img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.plan-slider .slick-current {
+    position: relative;
+    height: 600px;
+    margin-top: 50px;
+}
 
 
 
