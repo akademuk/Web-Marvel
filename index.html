@@ -20,7 +20,7 @@
 <body class="body">
 
 
-    <header>
+    <header id="header">
         <div class="logotype">
             <a href="#">
                 <img width="206" height="91" src="img/logo.svg" alt="Charity Fund">
@@ -95,23 +95,6 @@
                     DONATE NOW
                 </button>
             </div>
-            <!-- <ul class="menuContentContact">
-                <li>
-                    <a class="burgerClose" href="#">
-                        User agreement
-                    </a>
-                </li>
-                <li>
-                    <a class="burgerClose" href="#" class="linkTransition">
-                        Privacy Policy
-                    </a>
-                </li>
-                <li>
-                    <a class="burgerClose" href="#" class="linkTransition">
-                        Security policy for the <br> transfer of details
-                    </a>
-                </li>
-            </ul> -->
             <div class="burger-contact">
                 <ul>
                     <li>
@@ -631,14 +614,16 @@
         <div class="wrapper">
             <div class="feedback-left">
                 <h2>ЗАМОВЛЯЙТЕ
-                    <span>ШВИДШЕ ПРОЕКТ</span></h2>
+                    <span>ШВИДШЕ ПРОЕКТ</span>
+                </h2>
             </div>
             <div class="feedback-right">
                 <form action="">
                     <input type="text" placeholder="Ім’я*">
                     <input type="email" placeholder="E-mail*">
                     <input type="tel" placeholder="Номер телефону*">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваше завдання або побажання до майбутнього проекту"></textarea>
+                    <textarea name="" id="" cols="30" rows="10"
+                        placeholder="Ваше завдання або побажання до майбутнього проекту"></textarea>
                     <input type="submit" class="submit" value="Відправити">
                 </form>
             </div>
@@ -734,181 +719,6 @@
     </footer>
 
 
-
-
-
-
-    <!-- <div class="hidden">
-        <div class="modal-farmer" id="step1">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="">
-            </button>
-            <div class="modal-farmer-flex">
-                <div class="modal-farmer-left">
-                    <h2>Дизайн</h2>
-                    <div class="modal-farmer-overflow">
-                        <div class="modal-farmer-overflow-scroll">
-                            <h3>від 5000 грн</h3>
-                            <div class="modal-farmer-text">
-                                <div class="modal-farmer-text-img">
-                                    <picture>
-                                        <source srcset="img/pngwing0.webp" type="image/webp">
-                                        <img width="252" height="200" src="img/pngwing0.png" alt="Дизайн">
-                                    </picture>
-                                </div>
-                                <ul>
-                                    <li>Збір вимог: На цьому етапі важливо зрозуміти потреби клієнта і вимоги до сайту. Ви можете провести зустріч або опитування, щоб з'ясувати їх бізнес-цілі, цільову аудиторію та функціональні вимоги.</li>
-                                    <li>Розробка концепції: На основі зібраних вимог ви створюєте концепцію дизайну, яка відображає загальний вигляд і стиль сайту. Це може включати вибір кольорової палітри, типографіки, композиції та інших елементів, які відповідають бренду і цілям клієнта.</li>
-                                    <li>Створення макету: На цьому етапі ви розробляєте макети сайту, які візуалізують його структуру та розташування елементів. Це може бути проведено за допомогою графічних програм або спеціальних інструментів для розробки макетів.</li>
-                                    <li>Деталізація дизайну: Після затвердження макетів ви переходите до деталізації дизайну. Це включає розробку кожної сторінки сайту, вибір іконок, стилізацію форм, підбір зображень тощо. Особлива увага приділяється навігації та користувацькому досвіду, забезпечуючи зручність взаємодії з сайтом.</li>
-                                    <li>Прототипування і тестування: Перед фінальною реалізацією дизайну можна створити прототип сайту, щоб перевірити його функціональність та взаємодію з користувачем. Тестування прототипу допоможе виявити можливі проблеми та внести виправлення до дизайну.</li>       
-                                    <li>Фінальна реалізація: Після затвердження дизайну і прототипу ви можете надіслати остаточні файли розробникам для веб-розробки. Розробники використовують дизайн як основу для створення функціонального сайту, забезпечуючи, що всі елементи виглядають і працюють належним чином.</li>                         
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-farmer-right">
-                    <div class="modal-farmer-right-img">
-                        <picture>
-                            <source srcset="img/pngwing0.webp" type="image/webp">
-                            <img width="356" height="750" src="img/pngwing0.png" alt="Дизайн">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal-farmer" id="step2">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="">
-            </button>
-            <div class="modal-farmer-flex">
-                <div class="modal-farmer-left">
-                    <h2>Розробка</h2>
-                    <div class="modal-farmer-overflow">
-                        <div class="modal-farmer-overflow-scroll">
-                            <h3>від 5000 грн</h3>
-                            <div class="modal-farmer-text">
-                                <div class="modal-farmer-text-img">
-                                    <picture>
-                                        <source srcset="img/pngwing.webp" type="image/webp">
-                                        <img width="252" height="200" src="img/pngwing.png" alt="Розробка">
-                                    </picture>
-                                </div>
-                                <ul>
-                                    <li>Розробка HTML-структури: На цьому етапі веб-дизайнер перетворює графічний дизайн веб-сайту на HTML-код. Він створює основну структуру сторінок, вставляє текстовий контент, зображення та інші медіа-елементи.</li>
-                                    <li>CSS-стилізація: Після розробки HTML-структури дизайнер застосовує CSS-стилі для визначення вигляду та оформлення елементів на сторінках. Це включає встановлення кольорів, шрифтів, розташування, фонів та інших стилевих властивостей.</li>
-                                    <li>Адаптація до різних пристроїв: З урахуванням росту використання мобільних пристроїв важливо забезпечити, щоб веб-сайт був адаптивним та добре відображався на різних пристроях і розмірах екранів. Це може включати використання медіа-запитів, гнучкого макету та інших технік для оптимального відображення на десктопах, планшетах та мобільних телефонах.</li>
-                                    <li>Тестування та налагодження: Після завершення верстки і адаптації веб-сайту до різних пристроїв необхідно провести тестування для переконання в його коректному відображенні та функціональності на різних браузерах та пристроях. Це допоможе виявити та виправити можливі проблеми перед запуском сайту.</li>
-                                    <li>Оптимізація швидкості завантаження: Важливим аспектом верстки є оптимізація швидкості завантаження веб-сайту. Це може включати оптимізацію зображень, використання кешування, мінімізацію файлів CSS та JavaScript, щоб забезпечити швидке завантаження сторінок.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-farmer-right">
-                    <div class="modal-farmer-right-img">
-                        <picture>
-                            <source srcset="img/pngwing.webp" type="image/webp">
-                            <img width="356" height="750" src="img/pngwing.png" alt="Розробка">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal-farmer" id="step4">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="">
-            </button>
-            <div class="modal-farmer-flex">
-                <div class="modal-farmer-left">
-                    <h2>Оптимізація</h2>
-                    <div class="modal-farmer-overflow">
-                        <div class="modal-farmer-overflow-scroll">
-                            <h3>від 5000 грн</h3>
-                            <div class="modal-farmer-text">
-                                <div class="modal-farmer-text-img">
-                                    <picture>
-                                        <source srcset="img/pngwing1.webp" type="image/webp">
-                                        <img width="252" height="200" src="img/pngwing1.png" alt="Ремонт та оптимізація">
-                                    </picture>
-                                </div>
-                                <ul>
-                                    <li>Ключові слова та дослідження конкуренції: Важливим аспектом SEO-оптимізації є вибір правильних ключових слів, які відповідають вашому контенту і популярні в пошукових системах. Також варто проаналізувати конкуренцію, щоб зрозуміти, з якими сайтами ви змагаєтеся.</li>
-                                    <li>Оптимізація метатегів: Метатеги, такі як заголовок сторінки (title tag) і опис (meta description), є важливими елементами для SEO. Вони повинні бути чіткими, збалансованими та містити ключові слова, що відображають зміст сторінки.</li>
-                                    <li>Оптимізація URL-адрес: URL-адреси сторінок повинні бути зрозумілими та оптимізованими для SEO. Використовуйте релевантні ключові слова в URL-адресах та забезпечте їх читабельність.</li>
-                                    <li>Оптимізація контенту: Ваш контент повинен бути унікальним, цікавим та цінним для користувачів. Використовуйте ключові слова в заголовках, підзаголовках та текстовому контенті, але зберігайте природний потік тексту і уникайте надмірного ключового словозгущення.</li>
-                                    <li>Оптимізація зображень: Оптимізуйте зображення на вашому сайті, зменшуючи їх розмір, використовуючи відповідні назви файлів та атрибути ALT для опису зображення. Це допоможе покращити швидкість завантаження сторінок та ранжування в пошукових системах.</li>
-                                    <li>Внутрішня посилання: Використовуйте внутрішні посилання для підтримки навігації по вашому сайту та сприяння індексації сторінок пошуковими системами. Посилання повинні бути релевантними та використовувати ключові слова.</li>
-                                    <li>Зовнішні посилання (беклінки): Отримання якісних зовнішніх посилань на ваш сайт від інших авторитетних та релевантних джерел може покращити ваше ранжування в пошукових системах. Співпраця з іншими сайтами, гостьові пости та прес-релізи є деякими методами для отримання беклінків.</li>
-                                    <li>Аналітика та відстеження: Встановлення інструментів аналітики, таких як Google Analytics, допоможе відстежувати відвідуваність, популярність сторінок та ефективність SEO-стратегій. Аналіз цих даних дозволяє вам вносити вдосконалення та оптимізувати вашу стратегію SEO.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-farmer-right">
-                    <div class="modal-farmer-right-img">
-                        <picture>
-                            <source srcset="img/pngwing1.webp" type="image/webp">
-                            <img width="356" height="750" src="img/pngwing1.png" alt="Ремонт та оптимізація">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="hidden">
-        <div class="modal-farmer" id="step3">
-            <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="">
-            </button>
-            <div class="modal-farmer-flex">
-                <div class="modal-farmer-left">
-                    <h2>Контент</h2>
-                    <div class="modal-farmer-overflow">
-                        <div class="modal-farmer-overflow-scroll">
-                            <h3>від 5000 грн</h3>
-                            <div class="modal-farmer-text">
-                                <div class="modal-farmer-text-img">
-                                    <picture>
-                                        <source srcset="img/pngwing5.webp" type="image/webp">
-                                        <img width="252" height="200" src="img/pngwing5.png" alt="Розробка ігор">
-                                    </picture>
-                                </div>
-                                <ul>
-                                    <li>Цільова аудиторія: Важливо зрозуміти хто ваша цільова аудиторія. Вивчіть їхні потреби, інтереси та очікування, щоб створити контент, який приверне їх увагу та забезпечить значимість для них.</li>
-                                    <li>Унікальність та якість: Ваш контент повинен бути унікальним та високої якості. Переконайтеся, що він містить оригінальну інформацію, цікаві деталі та відповідає цілям вашого сайту.</li>
-                                    <li>Чіткість та доступність: Контент повинен бути чітким, легким для сприйняття та доступним для широкої аудиторії. Використовуйте зрозумілу мову, логічну структуру, булет-пункти та підзаголовки, щоб полегшити читання та навігацію.</li>
-                                    <li>Візуальний елемент: Важливим аспектом контенту є його візуальний аспект. Використовуйте відповідні зображення, відео, графіку та ілюстрації, щоб зробити контент привабливим та цікавим для користувачів.</li>
-                                    <li>Актуальність: Слід постійно оновлювати контент вашого сайту, додавати нову інформацію та матеріали. Це допоможе зберегти інтерес користувачів та забезпечити актуальність вашого сайту.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-farmer-right">
-                    <div class="modal-farmer-right-img">
-                        <picture>
-                            <source srcset="img/pngwing5.webp" type="image/webp">
-                            <img width="356" height="750" src="img/pngwing5.png" alt="Розробка ігор">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-
-
     <div class="hidden">
         <div class="modal-farmer" id="services1">
             <button data-fancybox-close class="btn closeMe">
@@ -923,9 +733,9 @@
                                 викликає їхній інтерес.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                  
-                                        <img width="252" height="200" src="img/stories1.png" alt="Дизайн">
-                                    
+
+                                    <img width="252" height="200" src="img/stories1.png" alt="Дизайн">
+
                                 </div>
                                 <ul>
                                     <li>Перший враження: Добре оформлений дизайн забезпечує сильне перше враження про
@@ -954,7 +764,7 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                            <img width="356" height="750" src="img/stories1.png" alt="Дизайн">
+                        <img width="356" height="750" src="img/stories1.png" alt="Дизайн">
                     </div>
                 </div>
             </div>
@@ -974,7 +784,7 @@
                             <h3>Ми створюємо унікальні веб-сайти, які відповідають вашим потребам та бізнес-цілям.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                        <img width="252" height="200" src="img/stories2.png" alt="Розробка">
+                                    <img width="252" height="200" src="img/stories2.png" alt="Розробка">
                                 </div>
                                 <ul>
                                     <li>Професійний вигляд: Розробка веб-сайту надає можливість створити професійний
@@ -1009,7 +819,7 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                            <img width="356" height="750" src="img/stories2.png" alt="Розробка">
+                        <img width="356" height="750" src="img/stories2.png" alt="Розробка">
                     </div>
                 </div>
             </div>
@@ -1030,8 +840,7 @@
                                 роботу та продуктивність вашого сайту.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                        <img width="252" height="200" src="img/stories3.png"
-                                            alt="Ремонт та оптимізація">
+                                    <img width="252" height="200" src="img/stories3.png" alt="Ремонт та оптимізація">
                                 </div>
                                 <ul>
                                     <li>Поліпшення продуктивності: Ремонт і оптимізація сайту можуть значно покращити
@@ -1066,7 +875,7 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                            <img width="356" height="750" src="img/stories3.png" alt="Ремонт та оптимізація">
+                        <img width="356" height="750" src="img/stories3.png" alt="Ремонт та оптимізація">
                     </div>
                 </div>
             </div>
@@ -1086,7 +895,7 @@
                             <h3> Ми створюємо захоплюючі концепції та привабливий дизайн для мобільних ігор. </h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                        <img width="252" height="200" src="img/stories4.png" alt="Розробка ігор">
+                                    <img width="252" height="200" src="img/stories4.png" alt="Розробка ігор">
                                 </div>
                                 <ul>
                                     <li>Висока популярність мобільних ігор: Мобільні ігри стали дуже популярними серед
@@ -1120,7 +929,7 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                            <img width="356" height="750" src="img/stories4.png" alt="Розробка ігор">
+                        <img width="356" height="750" src="img/stories4.png" alt="Розробка ігор">
                     </div>
                 </div>
             </div>
@@ -1146,9 +955,9 @@
                                 використовується компаніями для презентації та співпраці з клієнтами.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                   
-                                        <img width="252" height="200" src="img/portfolio1.png" alt="САЙТ ВІЗІТІВКА">
-                                  
+
+                                    <img width="252" height="200" src="img/portfolio1.png" alt="САЙТ ВІЗІТІВКА">
+
                                 </div>
                                 <ul>
                                     <li>Головна сторінка: Це перша сторінка сайту, яка часто містить коротку вітальну
@@ -1172,9 +981,9 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                    
-                            <img width="356" height="750" src="img/portfolio1.png" alt="САЙТ ВІЗІТІВКА">
-                     
+
+                        <img width="356" height="750" src="img/portfolio1.png" alt="САЙТ ВІЗІТІВКА">
+
                     </div>
                 </div>
             </div>
@@ -1197,9 +1006,9 @@
                                 конверсій - перетворенні відвідувачів в клієнтів або потенційних клієнтів.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                  
-                                        <img width="252" height="200" src="img/portfolio1.png" alt="Лендинг">
-                                    
+
+                                    <img width="252" height="200" src="img/portfolio1.png" alt="Лендинг">
+
                                 </div>
                                 Особливості лендінгу включають:
                                 <br>
@@ -1231,7 +1040,7 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                            <img width="356" height="750" src="img/portfolio1.png" alt="Лендинг">
+                        <img width="356" height="750" src="img/portfolio1.png" alt="Лендинг">
                     </div>
                 </div>
             </div>
@@ -1254,8 +1063,8 @@
                                 кодів.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                  
-                                        <img width="252" height="200" src="img/portfolio1.png" alt="Конструктор Webflow">
+
+                                    <img width="252" height="200" src="img/portfolio1.png" alt="Конструктор Webflow">
                                 </div>
                                 Основні особливості та можливості конструктора Webflow включають:
                                 <br>
@@ -1291,9 +1100,9 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                    
-                            <img width="356" height="750" src="img/portfolio1.png" alt="Конструктор Webflow">
-                       
+
+                        <img width="356" height="750" src="img/portfolio1.png" alt="Конструктор Webflow">
+
                     </div>
                 </div>
             </div>
@@ -1315,9 +1124,9 @@
                                 домівки, робочого місця або навіть під час подорожей.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                
-                                        <img width="252" height="200" src="img/portfolio1.png" alt="Інтернет-магазин">
-                                   
+
+                                    <img width="252" height="200" src="img/portfolio1.png" alt="Інтернет-магазин">
+
                                 </div>
                                 Особливості та функції інтернет-магазину включають:
                                 <br>
@@ -1352,9 +1161,9 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                
-                            <img width="356" height="750" src="img/portfolio1.png" alt="Інтернет-магазин">
-                        
+
+                        <img width="356" height="750" src="img/portfolio1.png" alt="Інтернет-магазин">
+
                     </div>
                 </div>
             </div>
@@ -1377,9 +1186,9 @@
                                 партнерами та іншими зацікавленими сторонами.</h3>
                             <div class="modal-farmer-text">
                                 <div class="modal-farmer-text-img">
-                                
-                                        <img width="252" height="200" src="img/portfolio1.png" alt="Корпоративний сайт">
-                                  
+
+                                    <img width="252" height="200" src="img/portfolio1.png" alt="Корпоративний сайт">
+
                                 </div>
                                 Основні особливості та елементи корпоративного сайту включають:
                                 <br>
@@ -1413,9 +1222,9 @@
                 </div>
                 <div class="modal-farmer-right">
                     <div class="modal-farmer-right-img">
-                    
-                            <img width="356" height="750" src="img/portfolio1.png" alt="Корпоративний сайт">
-                        
+
+                        <img width="356" height="750" src="img/portfolio1.png" alt="Корпоративний сайт">
+
                     </div>
                 </div>
             </div>
@@ -1467,7 +1276,14 @@
     </script>
 
     <script>
-        // Get the elements
+     
+
+        // Function to perform actions based on screen width
+        function checkScreenWidth() {
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth > 1200) {
+               // Get the elements
         var element1 = document.querySelector('.banner-element-1');
         var element2 = document.querySelector('.banner-element-2');
         var element3 = document.querySelector('.banner-element-3');
@@ -1505,8 +1321,32 @@
             element3.style.top = '16%';
             element3.style.left = '91%';
         }, 6000);
+        } else {
+
+        }
+        }
+
+    // Initial check on page load
+    checkScreenWidth();
+
+    // Check on window resize
+    window.addEventListener('resize', checkScreenWidth);
+     
 
     </script>
+
+<script>
+    var header = document.getElementById('header');
+
+    window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      if (scrollPosition >= 136) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
