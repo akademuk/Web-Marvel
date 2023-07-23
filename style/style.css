@@ -295,7 +295,7 @@ button {
 
 .banner {
     background: url(../img/Texture.png), linear-gradient(181deg, #312D2D 0%, rgba(58, 58, 58, 0.00) 30%);
-    ;
+    background: -webkit-image-set(url(../img/Texture.webp)), linear-gradient(181deg, #312D2D 0%, rgba(58, 58, 58, 0.00) 30%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2160,6 +2160,7 @@ body::-webkit-scrollbar-thumb {
 
 .questions {
     background: url(../img/Texture.png), #0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     background-repeat: repeat;
     padding: 128px 0;
 }
@@ -2474,6 +2475,7 @@ footer .wrapper {
     top: 0;
     width: 600px;
     background: url(../img/Texture.png), #0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
     padding: 224px 0 226px 0;
@@ -2927,6 +2929,7 @@ body.fancybox-active {
 
 .whatWeDo {
     background: url(../img/Texture.png), #0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
     position: relative;
@@ -3162,6 +3165,7 @@ body.fancybox-active {
 
 .portfolio {
     background: url(../img/Texture.png), #0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
     position: relative;
@@ -3303,6 +3307,7 @@ body.fancybox-active {
 
 .stories2 {
     background: url(../img/Texture.png), #030303;
+    background: -webkit-image-set(url(../img/Texture.webp)), #030303;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left;
