@@ -3435,14 +3435,14 @@ body.fancybox-active {
 
 .feedback {
     background: url(../img/feedback.png), #030303;
+    background: -webkit-image-set(url(../img/feedback.webp)),#030303;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
     padding: 128px 0;
 }
-.webp .feedback {
-    background-image: url(../img/feedback.webp),#030303;
-}
+
+
 
 .feedback .wrapper {
     max-width: 1116px;
