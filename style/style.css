@@ -1175,6 +1175,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     height: auto;
     background: url(../img/Texture.png), #0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)),#0E0E0E;
     overflow: hidden;
     padding: 128px 0;
 }
