@@ -687,11 +687,7 @@ button {
 .plan-slider {
     z-index: 2;
 }
-.stories-right2 {
-    background: url(../img/colleagues.jpg) !important;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-}
+
 
 
 /* Стили для контейнеров прогресс-баров */
@@ -2419,17 +2415,19 @@ footer .wrapper {
 
 .menuContent .close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 30px;
+    right: 32px;
     z-index: 200;
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     right: -600px;
     top: 0;
     width: 600px;
-    background: black;
+    background: url(../img/Texture.png), #0E0E0E;
+    background-repeat: repeat;
+    background-size: auto;
     padding: 224px 0 226px 0;
     box-sizing: border-box;
     height: 100vh;
@@ -2676,7 +2674,7 @@ body.fancybox-active {
     text-align: center;
 }
 .industries-item:hover {
-    padding-top: 100px;
+    padding-top: 16px;
     transition: all 0.5s;
 }
 .industries-item-img svg path {
@@ -3030,7 +3028,7 @@ body.fancybox-active {
     align-items: center;
     position: relative;
 }
-.whatWeDoRightSectionTop-tittle h4 {
+.whatWeDoRightSectionTop-tittle > p {
     color: #FFF;
     font-size: 48px;
     font-weight: 300;
@@ -4867,10 +4865,10 @@ form input:nth-of-type(3) {
         opacity: 1;
         z-index: 0;
     }
-    .whatWeDoRightSectionTop-tittle h4 {
+    .whatWeDoRightSectionTop-tittle > p {
         z-index: 2;
     }
-    .whatWeDoRightSectionTop p {
+    .whatWeDoRightSectionTop > p {
         position: relative;
         z-index: 2;
     }
@@ -5155,10 +5153,10 @@ form input:nth-of-type(3) {
     .whatWeDoRightSectionTop h3 {
         font-size: 16px;
     }
-    .whatWeDoRightSectionTop-tittle h4 {
+    .whatWeDoRightSectionTop-tittle > p {
         font-size: 32px;
     }
-    .whatWeDoRightSectionTop p {
+    .whatWeDoRightSectionTop > p {
         font-size: 10px;
     }
     .whatWeDoRightSection {
