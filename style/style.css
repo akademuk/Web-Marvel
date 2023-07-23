@@ -2336,6 +2336,7 @@ footer .wrapper {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
     transition: all 0.5s;
+    text-decoration: none;
     cursor: pointer;
 }
 .footer-btn a {
@@ -2812,6 +2813,14 @@ body.fancybox-active {
     left: 52%;
     z-index: 22;
 }
+.banner-element-2  {
+    width: 184px;
+    height: 184px;
+    transform: rotate(33.254deg);
+    border-radius: 90px;
+    background: linear-gradient(180deg, #D51D1D 0%, #340707 57.81%, #000 100%);
+    position: absolute;
+}
 .banner-element-3 {
     position: absolute;
     top: 16%;
@@ -3034,11 +3043,19 @@ body.fancybox-active {
     position: absolute;
     left: 30%;
     top: 20%;
+    width: 228px;
+    height: 228px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #D51D1D 0%, #340707 57.81%, #000 100%);
 }
 .whatWeDo-position2 {
     position: absolute;
     right: -3%;
     top: 50%;
+    width: 228px;
+    height: 228px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #D51D1D 0%, #340707 57.81%, #000 100%);
 }
 .portfolio-wrapper {
     display: flex;
@@ -4983,7 +5000,7 @@ form input:nth-of-type(3) {
     }
     .modal-farmer-text-img img {
         width: 100%;
-        
+
     }
 }
 
