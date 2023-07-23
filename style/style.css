@@ -3440,6 +3440,9 @@ body.fancybox-active {
     background-position: left;
     padding: 128px 0;
 }
+.webp .feedback {
+    background-image: url(../img/feedback.webp),#030303;
+}
 
 .feedback .wrapper {
     max-width: 1116px;
