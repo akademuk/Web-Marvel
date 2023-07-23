@@ -5937,6 +5937,7 @@ form input:nth-of-type(3) {
     .banner-img-position img {
         padding-top: 0;
         object-fit: contain;
+        object-position: center;
     }
 
     .banner-img-position {
@@ -6064,9 +6065,9 @@ form input:nth-of-type(3) {
     }
 
     .industries-item-img img {
-        width: 80%;
-        height: 80%;
-        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .industries-item-img {
