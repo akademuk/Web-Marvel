@@ -2714,7 +2714,9 @@ body.fancybox-active {
     color: #FFFFFF;
     margin-top: 20px;
 }
-
+.modal-farmer-right-img picture {
+    height: 100%;
+}
 .industries-item:hover .industries-item-img {
     background: transparent;
     top: -40px;
@@ -2734,7 +2736,7 @@ body.fancybox-active {
 }
 
 .industries-item:hover {
-    padding-top: 16px;
+    padding-top: 88px;
     transition: all 0.5s;
 }
 
@@ -3600,6 +3602,14 @@ form input:nth-of-type(3) {
 
 .industries-slider {
     display: none;
+}
+.feedback-left > p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
 
