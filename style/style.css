@@ -2723,6 +2723,11 @@ body.fancybox-active {
     transition: all 0.5s;
 
 }
+.stories-item-img picture {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 
 .step .wrapper>p {
     color: rgba(255, 255, 255, 0.80);
@@ -3611,7 +3616,9 @@ form input:nth-of-type(3) {
     align-items: center;
     color: #FFFFFF;
 }
-
+.plan-slider .stories-item-img {
+    box-shadow: none;
+}
 
 
 
