@@ -558,7 +558,7 @@
                         <div class="plan-flex">
                             <a data-fancybox data-src="#site1" data-modal="true" href="javascript:;"
                                 class="stories-btn">Детальніше</a>
-                            <span>від 12.000 грн</span>
+                            <span>від 10.000 грн</span>
                         </div>
                     </div>
 
@@ -622,7 +622,7 @@
                         <div class="plan-flex">
                             <a data-fancybox data-src="#site4" data-modal="true" href="javascript:;"
                                 class="stories-btn">Детальніше</a>
-                            <span>від 12.000 грн</span>
+                            <span>від 50.000 грн</span>
                         </div>
                     </div>
 
@@ -644,7 +644,7 @@
                         <div class="plan-flex">
                             <a data-fancybox data-src="#site5" data-modal="true" href="javascript:;"
                                 class="stories-btn">Детальніше</a>
-                            <span>від 12.000 грн</span>
+                            <span>від 50.000 грн</span>
                         </div>
                     </div>
 
@@ -702,13 +702,13 @@
 
             </div>
             <div class="feedback-right">
-                <form>
-                    <input type="text" placeholder="Ім’я*">
-                    <input type="email" placeholder="E-mail*">
-                    <input type="tel" placeholder="Номер телефону*">
-                    <textarea cols="30" rows="10"
+                <form id="ajax-contact-form2" action="" data-form-validate="true" class="clientForm">
+                    <input type="text"  name="name" placeholder="Ім’я*">
+                    <input type="email" name="email" placeholder="E-mail*">
+                    <input type="tel" name="phone" placeholder="Номер телефону*">
+                    <textarea cols="30" rows="10" name="message"
                         placeholder="Ваше завдання або побажання до майбутнього проекту"></textarea>
-                    <input type="submit" class="submit" value="Відправити">
+                    <input  type="submit" name="submit" class="submit" value="Відправити">
                 </form>
             </div>
         </div>
@@ -780,7 +780,7 @@
                             <a href="https://goo.gl/maps/7oL9cWwLJZEteLFT6">Україна</a>
                         </li>
                         <li>
-                            <a href="tel:+380672324002">+38 067 232 40 02</a>
+                            <a href="tel:+380636370890">+38 063 637 08 90</a>
                         </li>
                         <li>
                             <a href="mailto:webmarvelstudio@gmail.com">webmarvelstudio@gmail.com</a>
@@ -1365,6 +1365,7 @@
     <script src="script/burger.js"></script>
     <script src="script/jquery.maskedinput.min.js"></script>
     <script src="script/jquery.validate.min.js"></script>
+    <script src="script/contactform.js"></script>
 
     <script>
         $(document).ready(function () {

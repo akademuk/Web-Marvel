@@ -5278,6 +5278,12 @@ form input:nth-of-type(3) {
         width: 100%;
 
     }
+    .industries-item button {
+        height: 50px !important; 
+    }
+    .industries-item:hover {
+padding-top: 16px;
+    }
 }
 
 /* //max-width: 1200px */
