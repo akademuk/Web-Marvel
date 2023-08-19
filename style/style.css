@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Montserrat', sans-serif;
     background: #000000;
@@ -493,7 +492,7 @@ button {
 
 .stories {
     background: url(../img/section.png), #030303;
-    background: -webkit-image-set(url(../img/section.webp)),#030303;
+    background: -webkit-image-set(url(../img/section.webp)), #030303;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -1174,7 +1173,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     height: auto;
     background: url(../img/Texture.png), #0E0E0E;
-    background: -webkit-image-set(url(../img/Texture.webp)),#0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     overflow: hidden;
     padding: 128px 0;
 }
@@ -2713,15 +2712,18 @@ body.fancybox-active {
     color: #FFFFFF;
     margin-top: 20px;
 }
+
 .modal-farmer-right-img picture {
     height: 100%;
 }
+
 .industries-item:hover .industries-item-img {
     background: transparent;
     top: -40px;
     transition: all 0.5s;
 
 }
+
 .stories-item-img picture {
     display: block;
     height: 100%;
@@ -3449,7 +3451,7 @@ body.fancybox-active {
 
 .feedback {
     background: url(../img/feedback.png), #030303;
-    background: -webkit-image-set(url(../img/feedback.webp)),#030303;
+    background: -webkit-image-set(url(../img/feedback.webp)), #030303;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -3599,7 +3601,7 @@ form input:nth-of-type(3) {
 
 .scrolled {
     background: url(../img/Texture.png), #0E0E0E;
-    background: -webkit-image-set(url(../img/Texture.webp)),#0E0E0E;
+    background: -webkit-image-set(url(../img/Texture.webp)), #0E0E0E;
     background-repeat: repeat;
     background-size: auto;
 }
@@ -3607,7 +3609,8 @@ form input:nth-of-type(3) {
 .industries-slider {
     display: none;
 }
-.feedback-left > p {
+
+.feedback-left>p {
     font-weight: 300;
     font-size: 20px;
     line-height: 120%;
@@ -3615,6 +3618,7 @@ form input:nth-of-type(3) {
     align-items: center;
     color: #FFFFFF;
 }
+
 .plan-slider .stories-item-img {
     box-shadow: none;
 }
@@ -5277,11 +5281,13 @@ form input:nth-of-type(3) {
         width: 100%;
 
     }
+
     .industries-item button {
-        height: 50px !important; 
+        height: 50px !important;
     }
+
     .industries-item:hover {
-padding-top: 16px;
+        padding-top: 16px;
     }
 }
 
@@ -6153,14 +6159,3 @@ padding-top: 16px;
         padding-top: 16px;
     }
 }
-
-/* //max-width: 575px */
-
-@media (max-width: 480px) {}
-
-/* //max-width: 480px */
-
-
-@media (max-width: 375px) {}
-
-/* //max-width: 375px */
