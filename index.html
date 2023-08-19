@@ -13,15 +13,21 @@
     <meta name="author" content="WebMarvel studio">
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" >
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style/slick.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">
     <title>WebMarvel - професійна веб-студія для розробки та створення веб-сайтів</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNVFC91END"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PNVFC91END');
+    </script>
 </head>
 
 <body class="body">
@@ -53,7 +59,7 @@
         <a href="#here">Замовити</a>
         <div class="burger container">
             <div class="bar1">
-                <img src="img/burger.svg" alt="burger menu">
+                <img width="16" height="12" src="img/burger.svg" alt="burger menu">
             </div>
         </div>
     </header>
@@ -181,10 +187,10 @@
                 <p>Ми пропонуємо готовий набір послуг для успіху у вашій сфері.</p>
                 <div class="stories-navigation">
                     <div class="stories-navigation-prev">
-                        <img src="img/slider-arrow.svg" alt="prev">
+                        <img width="25" height="25" src="img/slider-arrow.svg" alt="prev">
                     </div>
                     <div class="stories-navigation-next">
-                        <img src="img/slider-arrow.svg" alt="next">
+                        <img width="25" height="25" src="img/slider-arrow.svg" alt="next">
                     </div>
                 </div>
             </div>
@@ -532,10 +538,10 @@
                 <p>Вас здивують наші ціни на запропоновані продукти для ефективного розвитку вашої справи.</p>
                 <div class="stories-navigation">
                     <div class="stories-navigation-prev plan-slider-prev">
-                        <img src="img/slider-arrow.svg" alt="prev">
+                        <img width="25" height="25" src="img/slider-arrow.svg" alt="prev">
                     </div>
                     <div class="stories-navigation-next plan-slider-next">
-                        <img src="img/slider-arrow.svg" alt="next">
+                        <img width="25" height="25" src="img/slider-arrow.svg" alt="next">
                     </div>
                 </div>
             </div>
@@ -703,9 +709,9 @@
             </div>
             <div class="feedback-right">
                 <form id="ajax-contact-form2" action="" data-form-validate="true" class="clientForm">
-                    <input type="text"  name="name" placeholder="Ім’я*">
+                    <input type="text"  name="name" placeholder="Ім’я*" required>
                     <input type="email" name="email" placeholder="E-mail*">
-                    <input type="tel" name="phone" placeholder="Номер телефону*">
+                    <input type="tel" name="phone" placeholder="Номер телефону*" required>
                     <textarea cols="30" rows="10" name="message"
                         placeholder="Ваше завдання або побажання до майбутнього проекту"></textarea>
                     <input  type="submit" name="submit" class="submit" value="Відправити">
@@ -795,7 +801,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="services1">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -851,7 +857,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="services2">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -912,7 +918,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="services3">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -975,7 +981,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="services4">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1038,7 +1044,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="site1">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1089,7 +1095,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="site2">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1151,7 +1157,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="site3">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1218,7 +1224,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="site4">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1285,7 +1291,7 @@
     <div class="hidden">
         <div class="modal-farmer" id="site5">
             <button data-fancybox-close class="btn closeMe">
-                <img src="img/close.svg" alt="закрити">
+                <img width="24" height="24" src="img/close.svg" alt="закрити">
             </button>
             <div class="modal-farmer-flex">
                 <div class="modal-farmer-left">
@@ -1353,8 +1359,8 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="script/jquery-3.6.4.min.js"></script>
+    <script src="script/jquery.fancybox.min.js"></script>
     <script src="script/stories-slides.js"></script>
     <script src="script/about-slider.js"></script>
     <script src="script/accardion.js"></script>
