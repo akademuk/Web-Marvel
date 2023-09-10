@@ -6371,4 +6371,19 @@ form input:nth-of-type(3) {
     .whatWeDoRightSection .picture-block {
         width: 100%;
     }
+    .footer-top-right ul li a {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-top-left-logo {
+        height: auto;
+    }
+    .burger-contact ul li a {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
